@@ -39,6 +39,15 @@ public class Personne {
         return  this.format();
     }
     public void affiche(){
-        System.out.println(toString());
+        System.out.println(this.toString());
+    }
+    @Override
+    public boolean equals(Object o){
+        if (this == o)return true;
+        if (o==null || this.getClass()!=o.getClass())return false;
+        Personne personne=(Personne)o;
+        if (this.getNom().equals(((Personne) o).getNom()))return true;
+        return false;
+
     }
 }
