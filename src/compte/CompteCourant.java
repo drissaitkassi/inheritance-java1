@@ -16,8 +16,8 @@ public class CompteCourant extends Compte{
 
     public int compareTo(Double o) {
        // o.compareTo(this.getSold());
-        if(this.getSold()>0)return 1;
-        else if (this.getSold()<0) {
+        if(this.getSold()>o)return 1;
+        else if (this.getSold()<o) {
             return -1;
         }else return 0;
 

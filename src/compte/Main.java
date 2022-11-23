@@ -14,6 +14,7 @@ public class Main {
         CompteCourant compteCourant2 =new CompteCourant(1060);
         CompteAnnuel compteAnnuel = new CompteAnnuel(1000,6);
         CompteMensuel compteMensuel=new CompteMensuel(1000,0.5);
+
        /* System.out.println("compte courant :");
         compte.bilanAnnuel();
         System.out.println("=======================");
@@ -28,10 +29,13 @@ public class Main {
             System.out.println(comptes[i].toString());
             comptes[i].bilanAnnuel();
         }
+        Double cC=compteCourant.getSold();
+        Double cA=compteAnnuel.getSold();
+        Double cM=compteMensuel.getSold();
+        System.out.println(compteCourant2.compareTo(cC));
+        System.out.println(compteCourant2.compareTo(cA));
+        System.out.println(compteCourant2.compareTo(cM));
 
-      /*  System.out.println(compteCourant2.compareTo(compteCourant.getSold()));
-        System.out.println(compteCourant2.compareTo(compteAnnuel.getSold()));
-        System.out.println(compteCourant2.compareTo(compteMensuel.getSold()));*/
         //use casted type on array type definition
     }
 }
