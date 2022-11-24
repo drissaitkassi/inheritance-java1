@@ -29,13 +29,15 @@ public class Main {
             System.out.println(comptes[i].toString());
             comptes[i].bilanAnnuel();
         }
-        Double cC=compteCourant.getSold();
-        Double cA=compteAnnuel.getSold();
-        Double cM=compteMensuel.getSold();
-        System.out.println(compteCourant2.compareTo(cC));
-        System.out.println(compteCourant2.compareTo(cA));
-        System.out.println(compteCourant2.compareTo(cM));
+
+
+
+
+        System.out.println(compteCourant2.compareTo(compteCourant));
+        System.out.println(compteCourant2.compareTo(compteAnnuel));
+        System.out.println(compteCourant2.compareTo(compteMensuel));
 
         //use casted type on array type definition
     }
 }
+

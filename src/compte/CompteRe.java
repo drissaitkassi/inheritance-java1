@@ -23,10 +23,7 @@ public class CompteRe extends Compte {
     @Override
     public String toString(){
         return "Compte Remunérer";
-    }
-    @Override
-    public int compareTo(Object o) {
-        return 0;
+    };
     }
 
-}
+

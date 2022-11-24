@@ -14,12 +14,12 @@ public class CompteCourant extends Compte{
         return "Compte Courant est :";
     }
 
-    public int compareTo(Double o) {
-       // o.compareTo(this.getSold());
+/*    public int compareTo(Double o) {
+
         if(this.getSold()>o)return 1;
         else if (this.getSold()<o) {
             return -1;
         }else return 0;
 
-    }
+    }*/
 }

@@ -45,7 +45,13 @@ public abstract class Compte implements Comparable{
 
     @Override
     public int compareTo(Object o) {
-        return 0;
+        Compte compte=(Compte) o;
+        return Double.compare(this.getSold(),compte.getSold());
+     /*   if(this.getSold()>((Compte) o).getSold())return 1;
+        else if (this.getSold()<((Compte) o).getSold()) {
+            return -1;
+        }else return 0;*/
+
     }
 
     @Override
